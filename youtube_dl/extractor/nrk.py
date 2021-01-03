@@ -244,7 +244,7 @@ class NRKIE(NRKBaseIE):
             if programs and isinstance(programs, dict):
                 series = str_or_none(programs.get('seriesTitle'))
                 season_id = str_or_none(programs.get('seasonId'))
-                season_number = int_or_none(programs.get('seasonNumber'))
+                season_number = int_or_none(programs.get('seasonDisplayType'))
                 episode = str_or_none(programs.get('episodeTitle'))
                 episode_number = int_or_none(programs.get('episodeNumber'))
             if not series:
